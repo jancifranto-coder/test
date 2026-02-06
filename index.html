@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Tlačiarenský Kliker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>3D Tlačiarenský Kliker</h1>
+      <p>Vyrábaj, nakupuj tlačiarne, filamenty a opravuj ich!</p>
+    </header>
+
+    <section class="stats">
+      <div class="stat-card">
+        <span class="label">Peniaze</span>
+        <span class="value" id="money">0 €</span>
+      </div>
+      <div class="stat-card">
+        <span class="label">Zarobíš za sekundu</span>
+        <span class="value" id="perSecond">0 €</span>
+      </div>
+      <div class="stat-card">
+        <span class="label">Stage</span>
+        <span class="value" id="stageName">Garáž</span>
+      </div>
+    </section>
+
+    <section class="clicker">
+      <button id="printButton" class="primary">Tlačiť diely</button>
+      <p class="hint">Klikaj a zbieraj peniaze na nové tlačiarne.</p>
+    </section>
+
+    <section class="shop">
+      <div class="shop-column">
+        <h2>Tlačiarne</h2>
+        <div id="printers"></div>
+      </div>
+      <div class="shop-column">
+        <h2>Filamenty</h2>
+        <div id="filaments"></div>
+      </div>
+      <div class="shop-column">
+        <h2>Opravy</h2>
+        <div id="repairs"></div>
+      </div>
+    </section>
+
+    <section class="achievements">
+      <h2>Achievementy</h2>
+      <ul id="achievementList"></ul>
+    </section>
+  </div>
+
+  <audio id="sound-click" preload="auto"></audio>
+  <audio id="sound-buy" preload="auto"></audio>
+  <audio id="sound-repair" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
